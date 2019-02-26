@@ -7,8 +7,8 @@ import CarouselOne from "../Components/Carousels/CarouselOne";
 import CarouselTwo from "../Components/Carousels/CarouselTwo";
 import CarouselThree from "../Components/Carousels/CarouselThree";
 import CarouselFour from "../Components/Carousels/CarouselFour";
-import Header from "../Components/Carousels/Header";
-import Footer from "../Components/Carousels/Footer";
+import Header from "../Components/Header&Footer/Header";
+import Footer from "../Components/Header&Footer/Footer";
 
 class LandingPage extends Component {
   render() {

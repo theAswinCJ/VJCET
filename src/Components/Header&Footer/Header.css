@@ -1,0 +1,40 @@
+.Header {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas:
+    "one one two"
+    "three three three"
+    "four five five"
+    "six six six";
+
+  text-align: center;
+  align-items: center;
+}
+
+#HeaderVJCLogo {
+  grid-area: one;
+  padding-top: 10px;
+}
+
+#HeaderHamburger {
+  grid-area: two;
+  padding-left: 10px;
+}
+
+#HeaderLineOne {
+  grid-area: three;
+}
+
+#HeaderNBALogo {
+  grid-area: four;
+  padding-top: 5px;
+}
+
+#HeaderVJCCode {
+  grid-area: five;
+}
+
+#HeaderLineTwo {
+  grid-area: six;
+}
