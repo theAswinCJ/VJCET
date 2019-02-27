@@ -35,6 +35,10 @@ class HomePage extends Component {
     instanceID: "HomePageFacilitiesSection"
   };
 
+  HomePageVisionSection = {
+    instanceID: "HomePageVisionSection"
+  };
+
   render() {
     return (
       <div className="HomePage">
@@ -44,6 +48,7 @@ class HomePage extends Component {
         <CarouselThree data={this.HomePageCarouselThree} />
         <DepartmentSection data={this.HomePageDepartmentSection} />
         <FacilitiesSection data={this.HomePageFacilitiesSection} />
+        <VisionSection data={this.HomePageFacilitiesSection} />
       </div>
     );
   }
