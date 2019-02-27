@@ -1,0 +1,22 @@
+.CarouselFour {
+  padding: 20px 0px;
+}
+
+.CarouselFourSlider {
+  padding-top: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  overflow: auto;
+
+  -webkit-overflow-scrolling: touch;
+
+  scroll-snap-type: x mandatory;
+}
+
+.CarouselFourSlide {
+  scroll-snap-align: center;
+  width: 320px;
+  padding: 0px 0px;
+  font-size: 20px;
+}

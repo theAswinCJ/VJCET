@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./CarouselTwo.css";
-import ImageOne from "../Images/ImageOne";
 import CustomOne from "../Texts/CustomOne";
 
 class CarouselTwo extends Component {
