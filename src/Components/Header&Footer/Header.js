@@ -3,7 +3,7 @@ import "./Header.css";
 import "../Images/ImageOne";
 import ImageOne from "../Images/ImageOne";
 import Line from "../Lines/Line";
-import AnchorLink from "../Texts/AnchorLink";
+import HeadingFive from "../Texts/HeadingFive";
 
 class Header extends Component {
   VJCLogo = {
@@ -38,14 +38,16 @@ class Header extends Component {
   };
 
   render() {
+    const { instanceID } = this.props.data;
+
     return (
-      <div className="Header">
+      <div className="Header" id={instanceID}>
         <ImageOne data={this.VJCLogo} />
         <ImageOne data={this.Hamburger} />
         <ImageOne data={this.NBALogo} />
         <Line data={this.HeaderLineOne} />
         <Line data={this.HeaderLineTwo} />
-        <AnchorLink data={this.HeaderVJCCode} />
+        <HeadingFive data={this.HeaderVJCCode} />
       </div>
     );
   }

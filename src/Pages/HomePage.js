@@ -10,17 +10,41 @@ import CarouselFour from "../Components/Carousels/CarouselFour";
 import Header from "../Components/Header&Footer/Header";
 import Footer from "../Components/Header&Footer/Footer";
 
-class LandingPage extends Component {
+class HomePage extends Component {
+  HomePageHeader = {
+    instanceID: "HomePageHeader"
+  };
+
+  HomePageCarouselOne = {
+    instanceID: "HomePageCarouselOne"
+  };
+
+  HomePageCarouselTwo = {
+    instanceID: "HomePageCarouselTwo"
+  };
+
+  HomePageCarouselThree = {
+    instanceID: "HomePageCarouselThree"
+  };
+
+  HomePageDepartmentSection = {
+    instanceID: "HomePageDepartmentSection"
+  };
+
   render() {
     return (
-      <div className="LandingPage">
-        <Header />
+      <div className="HomePage">
+        <Header data={this.HomePageHeader} />
+        <CarouselOne data={this.HomePageCarouselOne} />
+        <CarouselTwo data={this.HomePageCarouselTwo} />
+        <CarouselThree data={this.HomePageCarouselThree} />
+        <DepartmentSection data={this.HomePageDepartmentSection} />
       </div>
     );
   }
 }
 
-export default LandingPage;
+export default HomePage;
 
 /*
   <DepartmentSection />

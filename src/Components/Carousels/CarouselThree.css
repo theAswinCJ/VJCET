@@ -1,0 +1,63 @@
+.CarouselThree {
+}
+
+.CarouselThreeTop {
+  padding-top: 20px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 0px;
+  overflow: none;
+  grid-template-columns: 64% 18% 18%;
+  grid-template-areas: "one two three";
+  text-align: center;
+}
+
+#CarouselThreeNews {
+  padding: 0px;
+  margin: 0px;
+  grid-area: one;
+  padding-left: 30px;
+  place-self: start;
+}
+
+#CarouselThreePreviousArrow {
+  grid-area: two;
+  place-self: center;
+}
+
+#CarouselThreeNextArrow {
+  grid-area: three;
+  place-self: center;
+}
+
+.CarouselThreeSlider {
+  background: #fafafa;
+  margin: 10px 15px;
+  padding: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  overflow: auto;
+
+  -webkit-overflow-scrolling: touch;
+
+  scroll-snap-type: x mandatory;
+}
+
+.CarouselThreeSlide {
+  scroll-snap-align: center;
+  width: 320px;
+  padding: 0px 0px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.CarouselThreeSlide h5:nth-of-type(1) {
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+#Read h5 {
+  text-transform: capitalize;
+  color: #109648;
+}

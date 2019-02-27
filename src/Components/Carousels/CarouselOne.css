@@ -1,0 +1,41 @@
+.CarouselOneSlider {
+  z-index: 1;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  overflow: auto;
+
+  -webkit-overflow-scrolling: touch;
+
+  scroll-snap-type: x mandatory;
+}
+
+.CarouselOneSlide {
+  scroll-snap-align: center;
+  width: 320px;
+  padding: 0px 0px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.CarouselOneSlide img {
+  padding: 0px;
+  margin: 0px;
+}
+
+.CarouselOneControls {
+  display: flex;
+  position: absolute;
+  margin-top: -185px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#CarouselOnePreviousArrow img {
+  float: left;
+}
+
+#CarouselOneNextArrow img {
+  float: right;
+  padding-left: 225px;
+}

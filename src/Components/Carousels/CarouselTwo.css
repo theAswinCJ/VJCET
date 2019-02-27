@@ -1,0 +1,30 @@
+.CarouselTwo {
+  background: #109648;
+}
+
+.CustomOne {
+  padding: 10px;
+}
+
+#CustomOne h2 {
+  color: #fff;
+}
+
+.CarouselTwoSlider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  overflow: auto;
+
+  -webkit-overflow-scrolling: touch;
+
+  scroll-snap-type: x mandatory;
+}
+
+.CarouselTwoSlide {
+  scroll-snap-align: center;
+  width: 320px;
+  padding: 0px 0px;
+  color: #fff;
+  font-size: 20px;
+}

@@ -3,11 +3,11 @@ import "./AnchorLink.css";
 
 class AnchorLink extends Component {
   render() {
-    const { instanceID, title } = this.props.data;
+    const { instanceID, title, link } = this.props.data;
 
     return (
       <div className="AnchorLink" id={instanceID}>
-        <a>{title}</a>
+        <a href={link}>{title}</a>
       </div>
     );
   }
