@@ -1,15 +1,15 @@
 {
-  "main.css": "/VJCET/static/css/main.4646bd16.chunk.css",
-  "main.js": "/VJCET/static/js/main.a21e077d.chunk.js",
-  "main.js.map": "/VJCET/static/js/main.a21e077d.chunk.js.map",
+  "main.css": "/VJCET/static/css/main.92174d04.chunk.css",
+  "main.js": "/VJCET/static/js/main.a45210b9.chunk.js",
+  "main.js.map": "/VJCET/static/js/main.a45210b9.chunk.js.map",
   "runtime~main.js": "/VJCET/static/js/runtime~main.5328b5ea.js",
   "runtime~main.js.map": "/VJCET/static/js/runtime~main.5328b5ea.js.map",
   "static/js/2.5ec21d73.chunk.js": "/VJCET/static/js/2.5ec21d73.chunk.js",
   "static/js/2.5ec21d73.chunk.js.map": "/VJCET/static/js/2.5ec21d73.chunk.js.map",
   "index.html": "/VJCET/index.html",
-  "precache-manifest.5340f91c669a319efbdab0f9d198a3f8.js": "/VJCET/precache-manifest.5340f91c669a319efbdab0f9d198a3f8.js",
+  "precache-manifest.8ffeddd7460358217aba976ea2d731bf.js": "/VJCET/precache-manifest.8ffeddd7460358217aba976ea2d731bf.js",
   "service-worker.js": "/VJCET/service-worker.js",
-  "static/css/main.4646bd16.chunk.css.map": "/VJCET/static/css/main.4646bd16.chunk.css.map",
+  "static/css/main.92174d04.chunk.css.map": "/VJCET/static/css/main.92174d04.chunk.css.map",
   "static/media/CarouselThreeNext.svg": "/VJCET/static/media/CarouselThreeNext.eda53016.svg",
   "static/media/CarouselThreePrevious.svg": "/VJCET/static/media/CarouselThreePrevious.58bad2a8.svg",
   "static/media/FacilitiesThree.svg": "/VJCET/static/media/FacilitiesThree.d5ea6a41.svg",
@@ -18,5 +18,6 @@
   "static/media/nextArrow.svg": "/VJCET/static/media/nextArrow.19027289.svg",
   "static/media/previousArrow.svg": "/VJCET/static/media/previousArrow.d20f16fa.svg",
   "static/media/stock1.png": "/VJCET/static/media/stock1.230ed48b.png",
-  "static/media/stock2.png": "/VJCET/static/media/stock2.5d1cfa17.png"
+  "static/media/stock2.png": "/VJCET/static/media/stock2.5d1cfa17.png",
+  "static/media/stock3.png": "/VJCET/static/media/stock3.4b951634.png"
 }
