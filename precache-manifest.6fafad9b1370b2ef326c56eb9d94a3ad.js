@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e9ee7c98194a7d23b5219aa103e288d5",
-    "url": "/VJCET/static/media/hamburger.e9ee7c98.svg"
+    "revision": "c6a90e400576189051913060b324b174",
+    "url": "/VJCET/static/media/hoverselectortoleft.c6a90e40.svg"
   },
   {
-    "revision": "b99f15e9b849aecb6693",
-    "url": "/VJCET/static/css/main.cd1a73f5.chunk.css"
+    "revision": "1cfc82243e341243835f",
+    "url": "/VJCET/static/css/main.70aea660.chunk.css"
   },
   {
     "revision": "5328b5ea73fa37c01410",
@@ -40,8 +40,16 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/fb.5790ca6a.svg"
   },
   {
-    "revision": "b99f15e9b849aecb6693",
-    "url": "/VJCET/static/js/main.b99f15e9.chunk.js"
+    "revision": "e9ee7c98194a7d23b5219aa103e288d5",
+    "url": "/VJCET/static/media/hamburger.e9ee7c98.svg"
+  },
+  {
+    "revision": "1cfc82243e341243835f",
+    "url": "/VJCET/static/js/main.1cfc8224.chunk.js"
+  },
+  {
+    "revision": "263e2887170f19ff48ccab4765f375eb",
+    "url": "/VJCET/static/media/hoverselectortoright.263e2887.svg"
   },
   {
     "revision": "e3dd78230e61563e152e1ee7edd8a596",
@@ -80,7 +88,7 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/youtube.31507a87.svg"
   },
   {
-    "revision": "80c5b16d2730896d6398cd0f5ad9774d",
+    "revision": "8204c807ef70db79f4657c18816e2bdd",
     "url": "/VJCET/index.html"
   }
 ];
