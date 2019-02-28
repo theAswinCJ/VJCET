@@ -55,3 +55,9 @@
     padding: 5% 0%;
   }
 }
+
+@media (min-width: 1440px) {
+  .FacilitiesSectionCard {
+    margin: 3% 12%;
+  }
+}
