@@ -8,6 +8,10 @@
   margin-top: 0px;
 }
 
+#DepartmentSectionTitle h1 {
+  color: #000000;
+}
+
 @media (min-width: 768px) {
   .DepartmentSection {
     grid-template-columns: 50% 50%;
@@ -58,5 +62,36 @@
 
   #DepartmentListEight {
     grid-area: eight;
+  }
+
+  #DepartmentSectionTitle h1 {
+    margin: 0px;
+    padding-top: 3%;
+  }
+
+  #DepartmentSectionSubTitle p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .DepartmentSection {
+    grid-template-columns: 35% 30% 35%;
+    grid-template-areas:
+      "one title two"
+      "three title four"
+      "five subtitle six"
+      "seven subtitle eight";
+  }
+
+  #DepartmentSectionTitle {
+    align-self: end;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  #DepartmentSectionSubTitle p {
+    padding: 1% 10%;
   }
 }

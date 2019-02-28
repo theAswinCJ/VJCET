@@ -24,3 +24,110 @@
   padding-left: 20px;
   padding-top: 5px;
 }
+
+@media (min-width: 1024px) {
+  .DepartmentList {
+    padding: 2% 5%;
+  }
+
+  #DepartmentHeadingThree h3 {
+    text-align: left;
+    margin: 2% 0%;
+  }
+
+  #DepartmentBodyTwo p {
+    text-align: left;
+  }
+
+  .ListCTA {
+    display: none;
+  }
+
+  .DepartmentList:hover {
+    cursor: pointer;
+  }
+
+  .DepartmentList:hover h3 {
+    color: #ffffff;
+  }
+
+  .DepartmentList:hover p {
+    color: #ffffff;
+  }
+
+  #DepartmentListOne {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #DepartmentListOne:hover {
+    background-image: url(../../Assets/hoverselectortoright.png);
+    background-size: cover;
+  }
+
+  #DepartmentListThree {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #DepartmentListThree:hover {
+    background-image: url(../../Assets/hoverselectortoright.png);
+    background-size: cover;
+  }
+
+  #DepartmentListFive {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #DepartmentListFive:hover {
+    background-image: url(../../Assets/hoverselectortoright.png);
+    background-size: cover;
+  }
+
+  #DepartmentListSeven {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #DepartmentListSeven:hover {
+    background-image: url(../../Assets/hoverselectortoright.png);
+    background-size: cover;
+  }
+
+  #DepartmentListTwo {
+    padding-left: 10%;
+  }
+
+  #DepartmentListTwo:hover {
+    background-image: url(../../Assets/hoverselectortoleft.png);
+    background-size: cover;
+  }
+
+  #DepartmentListFour {
+    padding-left: 10%;
+  }
+
+  #DepartmentListFour:hover {
+    background-image: url(../../Assets/hoverselectortoleft.png);
+    background-size: cover;
+  }
+
+  #DepartmentListSix {
+    padding-left: 10%;
+  }
+
+  #DepartmentListSix:hover {
+    background-image: url(../../Assets/hoverselectortoleft.png);
+    background-size: cover;
+  }
+
+  #DepartmentListEight {
+    padding-left: 10%;
+  }
+
+  #DepartmentListEight:hover {
+    background-image: url(../../Assets/hoverselectortoleft.png);
+    background-size: cover;
+  }
+}

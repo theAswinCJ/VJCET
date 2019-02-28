@@ -7,6 +7,12 @@
   .VisionSection {
     padding: 30px;
     background-image: url("../Assets/visionbg.png");
-    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .VisionSection {
+    padding: 5% 0%;
   }
 }

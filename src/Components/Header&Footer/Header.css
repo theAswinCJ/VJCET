@@ -72,6 +72,7 @@
   .HeaderLinkTabOne {
     display: grid;
     grid-auto-flow: column;
+    grid-row-gap: 0px;
   }
 
   .HeaderLinkTabTwo {
@@ -127,7 +128,7 @@
   }
 
   #HeaderLineOne {
-    padding: 10px 0px;
+    padding: 0px 0px 10px 0px;
   }
 
   .Header {
@@ -143,5 +144,58 @@
 
   #HeaderHamburger {
     display: none;
+  }
+
+  #HeaderVJCLogo {
+    justify-self: start;
+    padding-left: 15%;
+  }
+
+  #HeaderNBALogo {
+    justify-self: end;
+    padding-right: 15%;
+    padding-top: 2%;
+  }
+
+  #HeaderVJCCode {
+    justify-self: start;
+  }
+}
+@media (min-width: 1024px) {
+  .Header {
+    grid-template-columns: 22% 8% 20% 50%;
+    grid-template-areas:
+      "vjc nba code tab1"
+      "line1 line1 line1 line1"
+      "tab2 tab2 tab2 tab2"
+      "line2 line2 line2 line2";
+  }
+
+  #HeaderLineThree {
+    display: none;
+  }
+
+  #AdmissionsOpen {
+    justify-self: end;
+    padding-right: 20%;
+  }
+
+  #HeaderNBALogo {
+    justify-self: start;
+    padding: 0px;
+    padding-top: 7%;
+  }
+
+  #HeaderVJCCode {
+    justify-self: start;
+    padding: 0px;
+  }
+
+  .HeaderLinkTabOne {
+    padding-left: 25%;
+  }
+
+  #HeaderLineOne {
+    padding: 0px;
   }
 }

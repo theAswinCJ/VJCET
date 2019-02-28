@@ -6,7 +6,7 @@
   .FacilitiesSection {
     background-image: url("../Assets/vjcbg.png");
     background-color: #ffffff;
-    background-repeat: no-repeat;
+    background-size: cover;
     padding: 50px;
   }
 
@@ -47,5 +47,11 @@
 
   #FacilityListFour {
     grid-area: four;
+  }
+}
+
+@media (min-width: 1024px) {
+  .FacilitiesSectionCard {
+    padding: 5% 0%;
   }
 }

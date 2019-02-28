@@ -240,3 +240,41 @@
     padding-left: 50px;
   }
 }
+
+@media (min-width: 1024px) {
+  .Footer {
+    grid-template-columns: 28% 17% 17% 16% 22%;
+    grid-template-areas:
+      "code one two three four"
+      "nba one two three four"
+      "vjc one two three four"
+      "line1 line1 line1 line1 line1"
+      "copyright copyright copyright copyright copyright"
+      "lmntrx lmntrx lmntrx lmntrx lmntrx";
+  }
+
+  #FooterLinksOne {
+    padding-left: 0px;
+  }
+
+  #FooterLinksTwo {
+    padding-left: 0px;
+  }
+
+  #FooterLinksThree {
+    padding-left: 0px;
+  }
+
+  #FooterLinksFour {
+    padding-left: 0px;
+  }
+
+  .FooterLinksFour {
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+      "follow follow follow follow"
+      "fb insta twitter youtube";
+    align-self: start;
+    padding-right: 30%;
+  }
+}

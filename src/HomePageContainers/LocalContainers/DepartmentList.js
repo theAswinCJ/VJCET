@@ -23,12 +23,12 @@ class DepartmentList extends Component {
   };
 
   HeadingThree = {
-    instanceID: "HeadingThree",
+    instanceID: "DepartmentHeadingThree",
     title: this.props.data.title
   };
 
   BodyTwo = {
-    instanceID: "BodyTwo",
+    instanceID: "DepartmentBodyTwo",
     title: this.props.data.description
   };
 
@@ -43,11 +43,13 @@ class DepartmentList extends Component {
 
     return (
       <div className="DepartmentList" id={instanceID}>
-        <HeadingThree data={this.HeadingThree} />
-        <BodyTwo data={this.BodyTwo} />
-        <div className="ListCTA">
-          <HeadingFive data={this.LearnMore} />
-          <ImageOne data={this.Arrow} />
+        <div className="DepartmentListContents">
+          <HeadingThree data={this.HeadingThree} />
+          <BodyTwo data={this.BodyTwo} />
+          <div className="ListCTA">
+            <HeadingFive data={this.LearnMore} />
+            <ImageOne data={this.Arrow} />
+          </div>
         </div>
       </div>
     );
