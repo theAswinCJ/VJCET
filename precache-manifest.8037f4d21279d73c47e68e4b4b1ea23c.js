@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/hamburger.e9ee7c98.svg"
   },
   {
-    "revision": "b329f37b6fe0f6faa443",
-    "url": "/VJCET/static/css/main.af8cbfeb.chunk.css"
+    "revision": "b99f15e9b849aecb6693",
+    "url": "/VJCET/static/css/main.cd1a73f5.chunk.css"
   },
   {
     "revision": "5328b5ea73fa37c01410",
@@ -28,6 +28,10 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/FacilitiesThree.d5ea6a41.svg"
   },
   {
+    "revision": "4a9ac9168cf9e50e81c1d401600091f0",
+    "url": "/VJCET/static/media/OPEN.4a9ac916.svg"
+  },
+  {
     "revision": "ff86799f23bfc415805cd0a98c47731f",
     "url": "/VJCET/static/media/VJCLogo.ff86799f.png"
   },
@@ -36,8 +40,8 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/fb.5790ca6a.svg"
   },
   {
-    "revision": "b329f37b6fe0f6faa443",
-    "url": "/VJCET/static/js/main.b329f37b.chunk.js"
+    "revision": "b99f15e9b849aecb6693",
+    "url": "/VJCET/static/js/main.b99f15e9.chunk.js"
   },
   {
     "revision": "e3dd78230e61563e152e1ee7edd8a596",
@@ -68,11 +72,15 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/twitter.198941a8.svg"
   },
   {
+    "revision": "f1fd7e43275c90045c70e93c3e8c18ce",
+    "url": "/VJCET/static/media/vjcbg.f1fd7e43.png"
+  },
+  {
     "revision": "31507a876741497b26a72f3e9453a4fd",
     "url": "/VJCET/static/media/youtube.31507a87.svg"
   },
   {
-    "revision": "4077b9b87b06d8e984081680d1c6d3c1",
+    "revision": "80c5b16d2730896d6398cd0f5ad9774d",
     "url": "/VJCET/index.html"
   }
 ];
