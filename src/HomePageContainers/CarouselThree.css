@@ -1,3 +1,7 @@
+#HomePageCarouselThree {
+  padding-bottom: 30px;
+}
+
 .CarouselThreeTop {
   padding-top: 20px;
   display: grid;
@@ -57,4 +61,10 @@
 #Read h5 {
   text-transform: capitalize;
   color: #109648;
+}
+
+@media (min-width: 400px) {
+  .CarouselThreeSlide {
+    width: 400px;
+  }
 }

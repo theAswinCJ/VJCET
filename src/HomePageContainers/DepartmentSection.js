@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./DepartmentSection.css";
 import HeadingOne from "../Components/Texts/HeadingOne";
-import HeadingFive from "../Components/Texts/HeadingFive";
 import BodyOne from "../Components/Texts/BodyOne";
 import DepartmentList from "./LocalContainers/DepartmentList";
 

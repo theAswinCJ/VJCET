@@ -3,10 +3,10 @@ import "./HomePage.css";
 import DepartmentSection from "../HomePageContainers/DepartmentSection";
 import FacilitiesSection from "../HomePageContainers/FacilitiesSection";
 import VisionSection from "../HomePageContainers/VisionSection";
-import CarouselOne from "../Components/Carousels/CarouselOne";
-import CarouselTwo from "../Components/Carousels/CarouselTwo";
-import CarouselThree from "../Components/Carousels/CarouselThree";
-import CarouselFour from "../Components/Carousels/CarouselFour";
+import CarouselOne from "../HomePageContainers/CarouselOne";
+import CarouselTwo from "../HomePageContainers/CarouselTwo";
+import CarouselThree from "../HomePageContainers/CarouselThree";
+import CarouselFour from "../HomePageContainers/CarouselFour";
 import Header from "../Components/Header&Footer/Header";
 import Footer from "../Components/Header&Footer/Footer";
 

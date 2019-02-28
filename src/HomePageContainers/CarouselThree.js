@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./CarouselThree.css";
-import HeadingTwo from "../Texts/HeadingTwo";
-import HeadingFour from "../Texts/HeadingFour";
-import HeadingFive from "../Texts/HeadingFive";
-import ImageOne from "../Images/ImageOne";
+import HeadingTwo from "../Components/Texts/HeadingTwo";
+import HeadingFour from "../Components/Texts/HeadingFour";
+import HeadingFive from "../Components/Texts/HeadingFive";
+import ImageOne from "../Components/Images/ImageOne";
 
 class CarouselThree extends Component {
   News = {
@@ -82,25 +82,25 @@ class CarouselThree extends Component {
 
     return (
       <div className="CarouselThree" id={instanceID}>
-        <div class="CarouselThreeTop">
+        <div className="CarouselThreeTop">
           <HeadingTwo data={this.News} />
           <ImageOne data={this.Previous} />
           <ImageOne data={this.Next} />
         </div>
-        <div class="CarouselThreeSlider">
-          <div class="CarouselThreeSlide" id={instanceID + "SlideOne"}>
+        <div className="CarouselThreeSlider">
+          <div className="CarouselThreeSlide" id={instanceID + "SlideOne"}>
             <HeadingFive data={this.SlideOneCategory} />
             <HeadingFour data={this.SlideOneTitle} />
             <HeadingFive data={this.Read} />
             <ImageOne data={this.SlideOneImage} />
           </div>
-          <div class="CarouselThreeSlide" id={instanceID + "SlideTwo"}>
+          <div className="CarouselThreeSlide" id={instanceID + "SlideTwo"}>
             <HeadingFive data={this.SlideTwoCategory} />
             <HeadingFour data={this.SlideTwoTitle} />
             <HeadingFive data={this.Read} />
             <ImageOne data={this.SlideTwoImage} />
           </div>
-          <div class="CarouselThreeSlide" id={instanceID + "SlideThree"}>
+          <div className="CarouselThreeSlide" id={instanceID + "SlideThree"}>
             <HeadingFive data={this.SlideThreeCategory} />
             <HeadingFour data={this.SlideThreeTitle} />
             <HeadingFive data={this.Read} />

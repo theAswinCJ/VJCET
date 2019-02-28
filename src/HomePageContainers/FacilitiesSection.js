@@ -44,12 +44,14 @@ class FacilitiesSection extends Component {
 
     return (
       <div className="FacilitiesSection" id={instanceID}>
-        <HeadingOne data={this.FacilitySectionTitle} />
-        <BodyOne data={this.FacilitySectionDescription} />
-        <FacilitiesList data={this.FacilityListOne} />
-        <FacilitiesList data={this.FacilityListTwo} />
-        <FacilitiesList data={this.FacilityListThree} />
-        <FacilitiesList data={this.FacilityListFour} />
+        <div className="FacilitiesSectionCard">
+          <HeadingOne data={this.FacilitySectionTitle} />
+          <BodyOne data={this.FacilitySectionDescription} />
+          <FacilitiesList data={this.FacilityListOne} />
+          <FacilitiesList data={this.FacilityListTwo} />
+          <FacilitiesList data={this.FacilityListThree} />
+          <FacilitiesList data={this.FacilityListFour} />
+        </div>
       </div>
     );
   }

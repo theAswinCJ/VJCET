@@ -1,7 +1,51 @@
-#FacilitySectionDescription {
-  padding-bottom: 15px;
+.FacilitiesSection {
+  padding: 30px 10px;
 }
 
-.FacilitiesSection {
-  padding-top: 30px;
+@media (min-width: 768px) {
+  .FacilitiesSection {
+    background-image: url("../Assets/vjcbg.png");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    padding: 50px;
+  }
+
+  .FacilitiesSectionCard {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+      "title title title title"
+      "desc desc desc desc"
+      "one two three four";
+  }
+
+  #FacilitySectionTitle {
+    grid-area: title;
+  }
+
+  #FacilitySectionTitle h1 {
+    margin-bottom: 0px;
+  }
+
+  #FacilitySectionDescription {
+    grid-area: desc;
+  }
+
+  #FacilityListOne {
+    grid-area: one;
+  }
+
+  #FacilityListTwo {
+    grid-area: two;
+  }
+
+  #FacilityListThree {
+    grid-area: three;
+  }
+
+  #FacilityListFour {
+    grid-area: four;
+  }
 }

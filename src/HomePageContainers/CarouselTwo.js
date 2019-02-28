@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./CarouselTwo.css";
-import CustomOne from "../Texts/CustomOne";
+import CustomOne from "../Components/Texts/CustomOne";
 
 class CarouselTwo extends Component {
   lorem = {
@@ -13,20 +13,20 @@ class CarouselTwo extends Component {
 
     return (
       <div className="CarouselTwo" id={instanceID}>
-        <div class="CarouselTwoSlider">
-          <div class="CarouselTwoSlide" id={instanceID + "SlideOne"}>
+        <div className="CarouselTwoSlider">
+          <div className="CarouselTwoSlide" id={instanceID + "SlideOne"}>
             <CustomOne data={this.lorem} />
           </div>
-          <div class="CarouselTwoSlide" id={instanceID + "SlideTwo"}>
+          <div className="CarouselTwoSlide" id={instanceID + "SlideTwo"}>
             <CustomOne data={this.lorem} />
           </div>
-          <div class="CarouselTwoSlide" id={instanceID + "SlideThree"}>
+          <div className="CarouselTwoSlide" id={instanceID + "SlideThree"}>
             <CustomOne data={this.lorem} />
           </div>
-          <div class="CarouselTwoSlide" id={instanceID + "SlideFour"}>
+          <div className="CarouselTwoSlide" id={instanceID + "SlideFour"}>
             <CustomOne data={this.lorem} />
           </div>
-          <div class="CarouselTwoSlide" id={instanceID + "SlideFive"}>
+          <div className="CarouselTwoSlide" id={instanceID + "SlideFive"}>
             <CustomOne data={this.lorem} />
           </div>
         </div>

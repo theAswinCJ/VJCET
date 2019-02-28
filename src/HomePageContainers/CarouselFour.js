@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./CarouselFour.css";
-import ImageOne from "../Images/ImageOne";
-import HeadingTwo from "../Texts/HeadingTwo";
-import HeadingFive from "../Texts/HeadingFive";
+import ImageOne from "../Components/Images/ImageOne";
+import HeadingTwo from "../Components/Texts/HeadingTwo";
+import HeadingFive from "../Components/Texts/HeadingFive";
 
 class CarouselFour extends Component {
   CarouselTitle = {
@@ -49,16 +49,16 @@ class CarouselFour extends Component {
     return (
       <div className="CarouselFour" id={instanceID}>
         <HeadingTwo data={this.CarouselTitle} />
-        <div class="CarouselFourSlider">
-          <div class="CarouselFourSlide" id={instanceID + "SlideOne"}>
+        <div className="CarouselFourSlider">
+          <div className="CarouselFourSlide" id={instanceID + "SlideOne"}>
             <ImageOne data={this.EventOneImage} />
             <HeadingFive data={this.EventOneTitle} />
           </div>
-          <div class="CarouselFourSlide" id={instanceID + "SlideTwo"}>
+          <div className="CarouselFourSlide" id={instanceID + "SlideTwo"}>
             <ImageOne data={this.EventTwoImage} />
             <HeadingFive data={this.EventTwoTitle} />
           </div>
-          <div class="CarouselFourSlide" id={instanceID + "SlideThree"}>
+          <div className="CarouselFourSlide" id={instanceID + "SlideThree"}>
             <ImageOne data={this.EventThreeImage} />
             <HeadingFive data={this.EventThreeTitle} />
           </div>

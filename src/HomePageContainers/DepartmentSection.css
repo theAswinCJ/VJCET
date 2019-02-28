@@ -1,3 +1,62 @@
 .DepartmentSection {
   background: #f8f8f8;
+  padding: 30px 20px;
+  display: grid;
+}
+
+#DepartmentSectionSubTitle p {
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .DepartmentSection {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "title title"
+      "subtitle subtitle"
+      "one two"
+      "three four"
+      "five six"
+      "seven eight";
+  }
+
+  #DepartmentSectionTitle {
+    grid-area: title;
+  }
+
+  #DepartmentSectionSubTitle {
+    grid-area: subtitle;
+  }
+
+  #DepartmentListOne {
+    grid-area: one;
+  }
+
+  #DepartmentListTwo {
+    grid-area: two;
+  }
+
+  #DepartmentListThree {
+    grid-area: three;
+  }
+
+  #DepartmentListFour {
+    grid-area: four;
+  }
+
+  #DepartmentListFive {
+    grid-area: five;
+  }
+
+  #DepartmentListSix {
+    grid-area: six;
+  }
+
+  #DepartmentListSeven {
+    grid-area: seven;
+  }
+
+  #DepartmentListEight {
+    grid-area: eight;
+  }
 }

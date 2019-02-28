@@ -1,5 +1,4 @@
 .CarouselOneSlider {
-  z-index: 1;
   display: grid;
   grid-auto-flow: column;
   grid-gap: 10px;
@@ -31,11 +30,20 @@
   overflow: hidden;
 }
 
-#CarouselOnePreviousArrow img {
-  float: left;
+#CarouselOneNextArrow img {
+  padding-left: 225px;
 }
 
-#CarouselOneNextArrow img {
-  float: right;
-  padding-left: 225px;
+@media (min-width: 400px) {
+  .CarouselOneSlide {
+    width: 400px;
+  }
+
+  .CarouselOneControls {
+    margin-top: -165px;
+  }
+
+  #CarouselOneNextArrow img {
+    padding-left: 305px;
+  }
 }

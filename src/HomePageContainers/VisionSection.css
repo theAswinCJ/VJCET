@@ -1,4 +1,12 @@
 .VisionSection {
   padding: 10px 20px;
-  background: #f8f8f8;
+  background-color: #f8f8f8;
+}
+
+@media (min-width: 768px) {
+  .VisionSection {
+    padding: 30px;
+    background-image: url("../Assets/visionbg.png");
+    background-repeat: no-repeat;
+  }
 }

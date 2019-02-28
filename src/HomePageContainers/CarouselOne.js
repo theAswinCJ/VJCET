@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./CarouselOne.css";
-import ImageOne from "../Images/ImageOne";
-import HeadingFive from "../Texts/HeadingFive";
+import ImageOne from "../Components/Images/ImageOne";
+import HeadingFive from "../Components/Texts/HeadingFive";
 
 class CarouselOne extends Component {
   PreviousArrow = {
@@ -19,7 +19,7 @@ class CarouselOne extends Component {
   StockPhoto = {
     instanceID: "CarouselOneStockPhoto",
     image: "stock1.png",
-    width: "320"
+    width: "100%"
   };
 
   lorem = {
@@ -33,30 +33,30 @@ class CarouselOne extends Component {
 
     return (
       <div className="CarouselOne" id={instanceID}>
-        <div class="CarouselOneSlider">
-          <div class="CarouselOneSlide" id={instanceID + "SlideOne"}>
+        <div className="CarouselOneSlider">
+          <div className="CarouselOneSlide" id={instanceID + "SlideOne"}>
             <ImageOne data={this.StockPhoto} />
             <HeadingFive data={this.lorem} />
           </div>
-          <div class="CarouselOneSlide" id={instanceID + "SlideTwo"}>
+          <div className="CarouselOneSlide" id={instanceID + "SlideTwo"}>
             <ImageOne data={this.StockPhoto} />
             <HeadingFive data={this.lorem} />
           </div>
-          <div class="CarouselOneSlide" id={instanceID + "SlideThree"}>
+          <div className="CarouselOneSlide" id={instanceID + "SlideThree"}>
             <ImageOne data={this.StockPhoto} />
             <HeadingFive data={this.lorem} />
           </div>
-          <div class="CarouselOneSlide" id={instanceID + "SlideFour"}>
+          <div className="CarouselOneSlide" id={instanceID + "SlideFour"}>
             <ImageOne data={this.StockPhoto} />
             <HeadingFive data={this.lorem} />
           </div>
-          <div class="CarouselOneSlide" id={instanceID + "SlideFive"}>
+          <div className="CarouselOneSlide" id={instanceID + "SlideFive"}>
             <ImageOne data={this.StockPhoto} />
             <HeadingFive data={this.lorem} />
           </div>
         </div>
 
-        <div class="CarouselOneControls">
+        <div className="CarouselOneControls">
           <ImageOne data={this.PreviousArrow} />
           <ImageOne data={this.NextArrow} />
         </div>
