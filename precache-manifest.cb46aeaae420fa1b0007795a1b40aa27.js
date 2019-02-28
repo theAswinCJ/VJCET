@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/hoverselectortoleft.c6a90e40.svg"
   },
   {
-    "revision": "1cfc82243e341243835f",
-    "url": "/VJCET/static/css/main.70aea660.chunk.css"
+    "revision": "680ecb9eba043eafc5e4",
+    "url": "/VJCET/static/css/main.33903887.chunk.css"
   },
   {
     "revision": "5328b5ea73fa37c01410",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/hamburger.e9ee7c98.svg"
   },
   {
-    "revision": "1cfc82243e341243835f",
-    "url": "/VJCET/static/js/main.1cfc8224.chunk.js"
+    "revision": "680ecb9eba043eafc5e4",
+    "url": "/VJCET/static/js/main.680ecb9e.chunk.js"
   },
   {
     "revision": "263e2887170f19ff48ccab4765f375eb",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/youtube.31507a87.svg"
   },
   {
-    "revision": "8204c807ef70db79f4657c18816e2bdd",
+    "revision": "04284b7e28e6858f07017ef45563acd8",
     "url": "/VJCET/index.html"
   }
 ];
