@@ -1,5 +1,7 @@
 .CarouselTwo {
   background: #109648;
+  position: relative;
+  height: 100px;
 }
 
 .CustomOne {
@@ -11,33 +13,57 @@
 }
 
 .CarouselTwoSlider {
-  display: grid;
+  /* display: grid;
   grid-auto-flow: column;
   grid-gap: 10px;
-  overflow: auto;
-
-  -webkit-overflow-scrolling: touch;
+  overflow: auto; */
+  /* scroll-behavior: unset; */
+  /* -webkit-overflow-scrolling: touch; */
 
   scroll-snap-type: x mandatory;
 }
 
 .CarouselTwoSlide {
   scroll-snap-align: center;
-  width: 320px;
+  width: 100vw;
   padding: 0px 0px;
   color: #fff;
   font-size: 20px;
 }
-
+.CarouselTwoPagination {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 10px;
+}
+.CarouselTwoRightArrow,
+.CarouselTwoLeftArrow {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+.CarouselTwoLeftArrow {
+  left: 30px;
+}
+.CarouselTwoRightArrow {
+  right: 30px;
+}
 @media (min-width: 400px) {
   .CarouselTwoSlide {
-    width: 400px;
+    width: 100vw;
     padding: 20px 10px;
   }
 }
 
 @media (min-width: 560px) {
   .CarouselTwoSlide {
-    width: 560px;
+    width: 100vw;
+  }
+  div::-webkit-scrollbar {
+    display: none;
   }
 }
