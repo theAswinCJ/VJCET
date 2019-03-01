@@ -6,8 +6,23 @@ class ImageOne extends Component {
     const { instanceID, image, width } = this.props.data;
 
     return (
-      <div className="ImageOne" id={instanceID}>
-        <img src={require("../../Assets/" + image)} width={width} />
+      <div
+        className="ImageOne"
+        id={instanceID}
+        style={{ ...this.props.containerStyle }}
+        onClick={
+          this.props.onClickAction
+            ? () => {
+                this.props.onClickAction();
+              }
+            : () => {}
+        }
+      >
+        <img
+          src={require("../../Assets/" + image)}
+          width={width}
+          style={{ ...this.props.imgStyle }}
+        />
       </div>
     );
   }

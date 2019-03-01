@@ -1,12 +1,16 @@
 .CarouselOneSlider {
-  display: grid;
+  /* display: grid;
   grid-auto-flow: column;
   grid-gap: 10px;
   overflow: auto;
 
   -webkit-overflow-scrolling: touch;
 
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory; */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  clear: both;
 }
 
 .CarouselOneSlide {
@@ -16,7 +20,27 @@
   color: #fff;
   font-size: 20px;
 }
-
+.leftHalfSlide {
+  position: relative;
+  left: -80px;
+  margin: 10px 50px;
+}
+.mainSlideContainer {
+  position: relative;
+  width: 850px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+.MainSlideDescription {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(255, 255, 255, 0.76);
+}
 .CarouselOneSlide img {
   padding: 0px;
   margin: 0px;
@@ -30,9 +54,9 @@
   overflow: hidden;
 }
 
-#CarouselOneNextArrow img {
+/* #CarouselOneNextArrow img {
   padding-left: 225px;
-}
+} */
 
 @media (min-width: 400px) {
   .CarouselOneSlide {
@@ -40,10 +64,10 @@
   }
 
   .CarouselOneControls {
-    margin-top: -165px;
+    /* margin-top: -165px; */
   }
 
-  #CarouselOneNextArrow img {
+  /* #CarouselOneNextArrow img {
     padding-left: 305px;
-  }
+  } */
 }
