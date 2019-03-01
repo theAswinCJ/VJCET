@@ -7,7 +7,9 @@ class ImageOne extends Component {
 
     return (
       <div
-        className="ImageOne"
+        className={`ImageOne ${
+          this.props.className ? this.props.className : ""
+        }`}
         id={instanceID}
         style={{ ...this.props.containerStyle }}
         onClick={

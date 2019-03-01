@@ -101,23 +101,36 @@ class CarouselOne extends Component {
           >
             <ImageOne
               data={this.dataArray[this.state.currentSelected].image}
-              containerStyle={{
-                width: "800px"
+              // containerStyle={{
+              //   width: "800px"
+              // }}
+              className="MainSlideImageContainer"
+              imgStyle={{
+                height: "inherit",
+                objectFit: "cover"
               }}
-              imgStyle={{ height: "450px", objectFit: "cover" }}
             />
             <div className="MainSlideDescription">
               <HeadingFive data={this.lorem} />
             </div>
+            <div className="CarouselOneControls">
+              <div style={{ position: "relative", width: "100%" }}>
+                <ImageOne
+                  data={this.PreviousArrow}
+                  className="PreviousArrow"
+                  onClickAction={this.rotateLeft}
+                />
+                <ImageOne
+                  data={this.NextArrow}
+                  className="NextArrow"
+                  onClickAction={this.rotateRight}
+                />
+              </div>
+            </div>
           </div>
           <div
-            className="CarouselOneSlide"
+            className="CarouselOneSlide rightHalfSlide"
             id={instanceID + "SlideThree"}
-            style={{
-              position: "relative",
-              right: "-80px",
-              margin: "10px 50px"
-            }}
           >
             <ImageOne
               data={this.dataArray[this.state.currentSelected + 1].image}
@@ -125,38 +138,6 @@ class CarouselOne extends Component {
               containerStyle={{ height: "100%" }}
             />
             {/* <HeadingFive data={this.lorem} /> */}
-          </div>
-        </div>
-
-        <div
-          className="CarouselOneControls"
-          style={{ width: "100%", top: "185px", bottom: "0px" }}
-        >
-          <div style={{ position: "relative", width: "100%" }}>
-            <ImageOne
-              data={this.PreviousArrow}
-              containerStyle={{
-                display: "flex",
-                alignItems: "center",
-                position: "absolute",
-                top: "0px",
-                bottom: "0px",
-                left: "160px"
-              }}
-              onClickAction={this.rotateLeft}
-            />
-            <ImageOne
-              data={this.NextArrow}
-              containerStyle={{
-                display: "flex",
-                alignItems: "center",
-                position: "absolute",
-                top: "0px",
-                bottom: "0px",
-                right: "160px"
-              }}
-              onClickAction={this.rotateRight}
-            />
           </div>
         </div>
       </div>
