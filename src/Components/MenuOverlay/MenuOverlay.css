@@ -1,3 +1,7 @@
+.MenuOverlay {
+  background-color: #00ff77;
+}
+
 @media (min-width: 768px) {
   .MenuOverlay {
     display: none;

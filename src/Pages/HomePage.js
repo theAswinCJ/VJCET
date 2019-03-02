@@ -9,10 +9,11 @@ import CarouselThree from "../HomePageContainers/CarouselThree";
 import CarouselFour from "../HomePageContainers/CarouselFour";
 import Header from "../Components/Header&Footer/Header";
 import Footer from "../Components/Header&Footer/Footer";
-import MenuOverlay from "Components/MenuOverlay";
+import MenuOverlay from "../Components/MenuOverlay/MenuOverlay";
 
 class HomePage extends Component {
   state = { showMenu: false };
+
   openMenu = () => {
     console.log("opening Menu");
     this.setState({ showMenu: true });
@@ -69,9 +70,7 @@ class HomePage extends Component {
         <CarouselFour data={this.HomePageCarouselFour} />
         <Footer data={this.HomePageFooter} />
         {this.state.showMenu ? (
-          <MenuOverlay closeMenuFunction={this.closeMenu}>
-            <p>whatever data</p>
-          </MenuOverlay>
+          <MenuOverlay closeMenuFunction={this.closeMenu} />
         ) : (
           ""
         )}

@@ -152,13 +152,6 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .mainSlideContainer {
-    /* width: 100vw !important; */
-    /* height: 477px; */
-  }
-  /* .MainSlideDescription {
-    position: relative;
-  } */
   .PreviousArrow,
   .NextArrow {
     top: 158px;
@@ -170,9 +163,7 @@
   .NextArrow {
     right: -75px;
   }
-  .CarouselOneSlider {
-    /* height: 365px; */
-  }
+
   .MainSlideImageContainer {
     height: 358px;
     width: 551px;

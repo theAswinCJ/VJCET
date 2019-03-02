@@ -10,14 +10,11 @@ class MenuOverlay extends Component {
           top: "0px",
           left: "0px",
           right: "0px",
-          bottom: "0px",
-          height: "100vh",
-          backgroundColor: "#fff",
-          ...this.props.style,
-          zIndex: 9999
+          bottom: "0px"
         }}
       >
-        {this.props.children}
+        <p>whatever data</p>
+
         <p
           onClick={e => {
             this.props.closeMenuFunction();

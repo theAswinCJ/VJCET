@@ -147,18 +147,6 @@ class CarouselFour extends Component {
           </div>
 
           <div className="CarouselFourSlider">
-            {/* <div className="CarouselFourSlide" id={instanceID + "SlideOne"}>
-              <ImageOne data={this.EventOneImage} />
-              <HeadingFive data={this.EventOneTitle} />
-            </div>
-            <div className="CarouselFourSlide" id={instanceID + "SlideTwo"}>
-              <ImageOne data={this.EventTwoImage} />
-              <HeadingFive data={this.EventTwoTitle} />
-            </div>
-            <div className="CarouselFourSlide" id={instanceID + "SlideThree"}>
-              <ImageOne data={this.EventThreeImage} />
-              <HeadingFive data={this.EventThreeTitle} />
-            </div> */}
             {this.slides.map((item, index, arr) => {
               if (
                 index < this.state.sliderSize + this.state.currentPage &&
