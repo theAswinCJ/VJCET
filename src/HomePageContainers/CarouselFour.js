@@ -130,6 +130,14 @@ class CarouselFour extends Component {
 
   render() {
     const { instanceID } = this.props.data;
+    window.addEventListener("resize", () => {
+      // console.log(window.innerWidth);
+      if (window.innerWidth < 768 && this.state.sliderSize > 1) {
+        this.setState({ sliderSize: 1 });
+      } else if (window.innerWidth >= 768 && this.state.sliderSize < 3) {
+        this.setState({ sliderSize: 3 });
+      }
+    });
 
     return (
       <div className="CarouselFour" id={instanceID}>
