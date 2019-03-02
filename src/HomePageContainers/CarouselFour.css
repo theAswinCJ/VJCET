@@ -1,17 +1,52 @@
 .CarouselFour {
   padding: 20px 0px;
+  position: relative;
 }
 
 .CarouselFourSlider {
-  padding-top: 20px;
-  display: grid;
-  grid-auto-flow: column;
+  background: #fafafa;
+  margin: 10px 15px;
+  padding: 10px;
+  /* display: grid;
+  grid-template-columns: 33% 33% 33%;
   grid-gap: 10px;
-  overflow: auto;
-
+  overflow: auto; */
+  display: flex;
+  justify-content: space-around;
   -webkit-overflow-scrolling: touch;
 
   scroll-snap-type: x mandatory;
+}
+.CarouselFourArrows {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 13px;
+}
+.CarouselFourArrowRight {
+  margin-left: 13px;
+}
+#CarouselFourPreviousArrow {
+  grid-area: two;
+  place-self: center;
+}
+#CarouselFourEvents {
+  padding: 0px;
+  margin: 0px;
+  grid-area: one;
+  padding-left: 30px;
+  place-self: start;
+}
+#CarouselFourNextArrow {
+  grid-area: three;
+  place-self: center;
+}
+.CarouselFourPagination {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .CarouselFourSlide {
@@ -20,9 +55,28 @@
   padding: 0px 0px;
   font-size: 20px;
 }
+.CarouselFourTop {
+  padding-top: 20px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 0px;
+  overflow: none;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: "one two ";
+  text-align: center;
+}
 
 @media (min-width: 400px) {
   .CarouselFourSlide {
     width: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .CarouselFourContentWrapper {
+    width: 1007px;
+    margin: auto;
+  }
+  .CarouselFourSlide {
+    width: 252px;
   }
 }
