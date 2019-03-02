@@ -114,7 +114,10 @@ class Header extends Component {
     return (
       <div className="Header" id={instanceID}>
         <ImageOne data={this.VJCLogo} />
-        <ImageOne data={this.Hamburger} />
+        <ImageOne
+          data={this.Hamburger}
+          onClickAction={this.props.openMenuFunction}
+        />
         <ImageOne data={this.NBALogo} />
         <Line data={this.HeaderLineOne} />
         <Line data={this.HeaderLineTwo} />

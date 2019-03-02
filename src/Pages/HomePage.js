@@ -9,8 +9,17 @@ import CarouselThree from "../HomePageContainers/CarouselThree";
 import CarouselFour from "../HomePageContainers/CarouselFour";
 import Header from "../Components/Header&Footer/Header";
 import Footer from "../Components/Header&Footer/Footer";
+import MenuOverlay from "Components/MenuOverlay";
 
 class HomePage extends Component {
+  state = { showMenu: false };
+  openMenu = () => {
+    console.log("opening Menu");
+    this.setState({ showMenu: true });
+  };
+  closeMenu = () => {
+    this.setState({ showMenu: false });
+  };
   HomePageHeader = {
     instanceID: "HomePageHeader"
   };
@@ -50,7 +59,7 @@ class HomePage extends Component {
   render() {
     return (
       <div className="HomePage">
-        <Header data={this.HomePageHeader} />
+        <Header data={this.HomePageHeader} openMenuFunction={this.openMenu} />
         <CarouselOne data={this.HomePageCarouselOne} />
         <CarouselTwo data={this.HomePageCarouselTwo} />
         <CarouselThree data={this.HomePageCarouselThree} />
@@ -59,6 +68,13 @@ class HomePage extends Component {
         <VisionSection data={this.HomePageFacilitiesSection} />
         <CarouselFour data={this.HomePageCarouselFour} />
         <Footer data={this.HomePageFooter} />
+        {this.state.showMenu ? (
+          <MenuOverlay closeMenuFunction={this.closeMenu}>
+            <p>whatever data</p>
+          </MenuOverlay>
+        ) : (
+          ""
+        )}
       </div>
     );
   }
