@@ -57,7 +57,10 @@ class CarouselTwo extends Component {
           // }}
         >
           <div className="CarouselTwoSlide" id={instanceID}>
-            <CustomOne data={this.data[this.state.selected]} />
+            <CustomOne
+              data={this.data[this.state.selected]}
+              className="CarouselTwoText"
+            />
           </div>
         </div>
         <div className="CarouselTwoPagination">
@@ -81,13 +84,13 @@ class CarouselTwo extends Component {
               >
                 <div
                   style={{
-                    height: "10px",
-                    width: "10px",
+                    height: "6px",
+                    width: "6px",
                     borderRadius: "100%",
                     backgroundColor:
-                      this.state.selected == index ? "#fff" : "#ffffff00",
-                    margin: "0px 2px",
-                    border: this.props.selected ? "none" : "1px solid #fff"
+                      this.state.selected == index ? "#fff" : "#ffffff77",
+                    margin: "0px 2px"
+                    // border: this.props.selected ? "none" : "1px solid #fff"
                   }}
                 />
               </a>

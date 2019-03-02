@@ -6,7 +6,7 @@ class CustomOne extends Component {
     const { instanceID, title } = this.props.data;
 
     return (
-      <div className="CustomOne" id={instanceID}>
+      <div className={`CustomOne ${this.props.className}`} id={instanceID}>
         <h2>{title}</h2>
       </div>
     );

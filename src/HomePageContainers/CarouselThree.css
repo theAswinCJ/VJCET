@@ -8,8 +8,8 @@
   grid-auto-flow: row;
   grid-gap: 0px;
   overflow: none;
-  grid-template-columns: 64% 18% 18%;
-  grid-template-areas: "one two three";
+  grid-template-columns: 80% 20%;
+  grid-template-areas: "one two ";
   text-align: center;
 }
 
@@ -19,6 +19,14 @@
   grid-area: one;
   padding-left: 30px;
   place-self: start;
+}
+.CarouselThreeArrows {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 13px;
+}
+.CarouselThreeArrowRight {
+  margin-left: 13px;
 }
 
 #CarouselThreePreviousArrow {
@@ -35,11 +43,12 @@
   background: #fafafa;
   margin: 10px 15px;
   padding: 10px;
-  display: grid;
-  grid-auto-flow: column;
+  /* display: grid;
+  grid-template-columns: 33% 33% 33%;
   grid-gap: 10px;
-  overflow: auto;
-
+  overflow: auto; */
+  display: flex;
+  justify-content: space-around;
   -webkit-overflow-scrolling: touch;
 
   scroll-snap-type: x mandatory;
@@ -57,14 +66,33 @@
   text-transform: uppercase;
   color: #8a8a8a;
 }
-
+.CarouselThree {
+  position: relative;
+}
 #Read h5 {
   text-transform: capitalize;
   color: #109648;
+}
+.CarouselThreePagination {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 400px) {
   .CarouselThreeSlide {
     width: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .CarouselThreeContentWrapper {
+    width: 1007px;
+    margin: auto;
+  }
+  .CarouselThreeSlide {
+    width: 252px;
   }
 }
