@@ -165,7 +165,6 @@ class CarouselThree extends Component {
   ];
   render() {
     window.addEventListener("resize", () => {
-      // console.log(window.innerWidth);
       if (window.innerWidth < 768 && this.state.sliderSize > 1) {
         this.setState({ sliderSize: 1 });
       } else if (window.innerWidth >= 768 && this.state.sliderSize < 3) {
@@ -220,7 +219,7 @@ class CarouselThree extends Component {
                     height: "6px",
                     width: "6px",
                     backgroundColor:
-                      index == this.state.currentPage ? "#109648" : "#aaa",
+                      index == this.state.currentPage ? "#880D1E" : "#aaa",
                     margin: "5px",
                     borderRadius: "100%"
                   }}

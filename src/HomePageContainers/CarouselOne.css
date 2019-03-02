@@ -1,12 +1,4 @@
 .CarouselOneSlider {
-  /* display: grid;
-  grid-auto-flow: column;
-  grid-gap: 10px;
-  overflow: auto;
-
-  -webkit-overflow-scrolling: touch;
-
-  scroll-snap-type: x mandatory; */
   position: relative;
   overflow: hidden;
   display: flex;
@@ -22,12 +14,10 @@
 }
 .leftHalfSlide {
   position: relative;
-  /* left: -80px; */
   margin: 10px 50px 10px 0px;
 }
 .rightHalfSlide {
   position: relative;
-  /* right: -80px; */
   margin: 10px 0px 10px 50px;
 }
 .mainSlideContainer {
@@ -41,6 +31,7 @@
 }
 .MainSlideDescription {
   position: absolute;
+  padding-top: 3%;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -78,33 +69,17 @@
   right: 160px;
 }
 
-/* #CarouselOneNextArrow img {
-  padding-left: 225px;
-} */
-
 @media (min-width: 400px) {
   .CarouselOneSlide {
     width: 400px;
   }
 
   .CarouselOneControls {
-    /* margin-top: -165px; */
     overflow: visible;
     z-index: 100;
   }
-
-  /* #CarouselOneNextArrow img {
-    padding-left: 305px;
-  } */
 }
 @media (min-width: 1440px) {
-  /* .mainSlideContainer {
-    width: 100vw !important;
-    height: 208px;
-  } */
-  /* .MainSlideDescription {
-    position: relative;
-  } */
   .PreviousArrow,
   .NextArrow {
     top: 198px;
@@ -116,22 +91,13 @@
   .NextArrow {
     right: -75px;
   }
-  .CarouselOneSlider {
-    /* height: 365px; */
-  }
+
   .MainSlideImageContainer {
     height: 477px;
     width: 948px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .mainSlideContainer {
-    /* width: 100vw !important; */
-    /* height: 477px; */
-  }
-  /* .MainSlideDescription {
-    position: relative;
-  } */
   .PreviousArrow,
   .NextArrow {
     top: 198px;
@@ -142,9 +108,6 @@
   }
   .NextArrow {
     right: -75px;
-  }
-  .CarouselOneSlider {
-    /* height: 365px; */
   }
   .MainSlideImageContainer {
     height: 477px;
@@ -176,10 +139,7 @@
   .rightHalfSlide {
     display: none;
   }
-  .mainSlideContainer {
-    width: 100vw !important;
-    /* height: 208px; */
-  }
+
   .MainSlideDescription {
     position: relative;
   }
@@ -194,9 +154,7 @@
   .NextArrow {
     right: 0px;
   }
-  .CarouselOneSlider {
-    /* height: 365px; */
-  }
+
   .MainSlideImageContainer {
     height: 208px;
     width: 100%;

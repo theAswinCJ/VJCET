@@ -1,15 +1,16 @@
 .VisionSection {
   padding: 10px 20px;
-  background-color: #f8f8f8;
+  background-color: #fff;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas:
-    "a a"
-    "b c";
+  grid-template-columns: 100%;
+  grid-template-areas: "b";
+
+  padding-top: 2%;
 }
 
 .VisionSectionA {
   grid-area: a;
+  display: none;
 }
 
 .VisionSectionB {
@@ -24,20 +25,22 @@
 @media (min-width: 768px) {
   .VisionSection {
     padding: 30px;
-    background-image: url("../Assets/visionbg.png");
-    background-size: cover;
   }
 }
 
 @media (min-width: 1024px) {
-  .VisionSection {
+  .VisionSectionA {
     padding: 5% 0%;
+    display: inline-block;
   }
-}
 
-@media (min-width: 1440px) {
   .VisionSection {
     padding: 1% 0% 4% 0%;
+
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "a a"
+      "b c";
   }
   .VisionSectionA {
     padding: 2% 2% 5% 2%;
@@ -64,7 +67,7 @@
 
   .VisionSectionB h1 {
     text-align: start;
-    color: #8a8a8a;
+    color: #b8b8b8;
   }
 
   .VisionSectionC p {
@@ -77,10 +80,6 @@
 
   .VisionSectionC h1 {
     text-align: start;
-    color: #8a8a8a;
-  }
-
-  .VisionSectionA h1 {
-    color: #000000;
+    color: #b8b8b8;
   }
 }

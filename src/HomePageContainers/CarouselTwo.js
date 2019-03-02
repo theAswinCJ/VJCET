@@ -7,28 +7,27 @@ class CarouselTwo extends Component {
   state = { selected: 0 };
   data = [
     {
-      instanceID: "CustomOne",
-      title: "0Admissions are open. Click here to know more"
+      instanceID: this.props.data.instanceID + "CustomOne",
+      title: "Admissions are open. Click here to know more"
     },
     {
-      instanceID: "CustomOne",
-      title: "1Admissions are open. Click here to know more"
+      instanceID: this.props.data.instanceID + "CustomOne",
+      title: "News 2. Click here to know more"
     },
     {
-      instanceID: "CustomOne",
-      title: "2Admissions are open. Click here to know more"
+      instanceID: this.props.data.instanceID + "CustomOne",
+      title: "News 3. Click here to know more"
     },
     {
-      instanceID: "CustomOne",
-      title: "3Admissions are open. Click here to know more"
+      instanceID: this.props.data.instanceID + "CustomOne",
+      title: "News 4. Click here to know more"
     },
     {
-      instanceID: "CustomOne",
-      title: "4Admissions are open. Click here to know more"
+      instanceID: this.props.data.instanceID + "CustomOne",
+      title: "News 5. Click here to know more"
     }
   ];
   rotateRight = () => {
-    // console.log(this.state.selected);
     this.setState({
       selected:
         this.state.selected + 1 >= this.data.length
@@ -50,12 +49,7 @@ class CarouselTwo extends Component {
 
     return (
       <div className="CarouselTwo" id={instanceID}>
-        <div
-          className="CarouselTwoSlider"
-          // onScroll={e => {
-          //   console.log(e);
-          // }}
-        >
+        <div className="CarouselTwoSlider">
           <div className="CarouselTwoSlide" id={instanceID}>
             <CustomOne
               data={this.data[this.state.selected]}
@@ -67,18 +61,11 @@ class CarouselTwo extends Component {
           {this.data.map((item, index, arr) => {
             return (
               <a
-                // href={`#${instanceID}${index}`}
                 onFocus={e => {
                   console.log("testfunction");
                   this.setState({ selected: index });
                 }}
                 onClick={e => {
-                  // console.log("clicked");
-
-                  // document
-                  //   .getElementById(`${instanceID}${index}`)
-                  //   .scrollIntoView();
-
                   this.setState({ selected: index });
                 }}
               >
@@ -90,7 +77,6 @@ class CarouselTwo extends Component {
                     backgroundColor:
                       this.state.selected == index ? "#fff" : "#ffffff77",
                     margin: "0px 2px"
-                    // border: this.props.selected ? "none" : "1px solid #fff"
                   }}
                 />
               </a>

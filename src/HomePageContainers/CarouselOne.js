@@ -73,17 +73,13 @@ class CarouselOne extends Component {
   };
   render() {
     const { instanceID } = this.props.data;
-    // console.log((this.state.currentSelected - 1) % this.dataArray.length);
     return (
       <div
         className="CarouselOne"
         id={instanceID}
         style={{ position: "relative" }}
       >
-        <div
-          className="CarouselOneSlider"
-          // style={{ position: "relative", overflow: "hidden" }}
-        >
+        <div className="CarouselOneSlider">
           <div
             className="CarouselOneSlide leftHalfSlide"
             id={instanceID + "SlideOne"}
@@ -93,7 +89,6 @@ class CarouselOne extends Component {
               imgStyle={{ height: "100%", objectFit: "cover" }}
               containerStyle={{ height: "100%" }}
             />
-            {/* <HeadingFive data={this.lorem} /> */}
           </div>
           <div
             className="CarouselOneSlide mainSlideContainer"
@@ -101,9 +96,6 @@ class CarouselOne extends Component {
           >
             <ImageOne
               data={this.dataArray[this.state.currentSelected].image}
-              // containerStyle={{
-              //   width: "800px"
-              // }}
               className="MainSlideImageContainer"
               imgStyle={{
                 height: "inherit",
@@ -137,7 +129,6 @@ class CarouselOne extends Component {
               imgStyle={{ height: "100%", objectFit: "cover" }}
               containerStyle={{ height: "100%" }}
             />
-            {/* <HeadingFive data={this.lorem} /> */}
           </div>
         </div>
       </div>

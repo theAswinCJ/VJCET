@@ -1,5 +1,7 @@
 .FacilitiesSection {
   padding: 30px 10px;
+
+  padding-top: 2%;
 }
 
 @media (min-width: 768px) {

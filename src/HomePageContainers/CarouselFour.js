@@ -144,7 +144,7 @@ class CarouselFour extends Component {
         <div className="CarouselFourContentWrapper">
           <div className="CarouselFourTop">
             <HeadingTwo data={this.Events} />
-            <div className="CarouselFourArrows">
+            <div className="CarouselFourArrows" id="CarouselFourArrows">
               <ImageOne data={this.Previous} onClickAction={this.rotateLeft} />
               <ImageOne
                 className="CarouselFourArrowRight"
@@ -173,22 +173,25 @@ class CarouselFour extends Component {
             })}
           </div>
         </div>
-        <div className="CarouselFourPagination">
-          {this.slides.map((item, index, arr) => {
-            if (index % this.state.sliderSize == 0)
-              return (
-                <div
-                  style={{
-                    height: "6px",
-                    width: "6px",
-                    backgroundColor:
-                      index == this.state.currentPage ? "#109648" : "#aaa",
-                    margin: "5px",
-                    borderRadius: "100%"
-                  }}
-                />
-              );
-          })}
+
+        <div className="CarouselFourPaginationContainer">
+          <div className="CarouselFourPagination">
+            {this.slides.map((item, index, arr) => {
+              if (index % this.state.sliderSize == 0)
+                return (
+                  <div
+                    style={{
+                      height: "6px",
+                      width: "6px",
+                      backgroundColor:
+                        index == this.state.currentPage ? "#880D1E" : "#aaa",
+                      margin: "5px",
+                      borderRadius: "100%"
+                    }}
+                  />
+                );
+            })}
+          </div>
         </div>
       </div>
     );
