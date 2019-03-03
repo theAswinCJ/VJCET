@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/hamburger.e9ee7c98.svg"
   },
   {
-    "revision": "e38864f2a2665568be3e",
+    "revision": "f7c07aa517b2b501f2f4",
     "url": "/VJCET/static/css/main.a468247e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/VJCET/static/js/2.0427db93.chunk.js"
   },
   {
-    "revision": "7df6e3f67f9b3c736c25f6ad709dc81d",
-    "url": "/VJCET/static/media/right-arrow.7df6e3f6.svg"
+    "revision": "32788e90cf496cf72e4951e2161e4c77",
+    "url": "/VJCET/static/media/right-arrow.32788e90.svg"
   },
   {
     "revision": "7df6e3f67f9b3c736c25f6ad709dc81d",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/fb.b05e1519.svg"
   },
   {
-    "revision": "e38864f2a2665568be3e",
-    "url": "/VJCET/static/js/main.e38864f2.chunk.js"
+    "revision": "f7c07aa517b2b501f2f4",
+    "url": "/VJCET/static/js/main.f7c07aa5.chunk.js"
   },
   {
     "revision": "2dad930e6e0a7ff21883745b493447f5",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/VJCET/static/media/youtube.6170946f.svg"
   },
   {
-    "revision": "b28e2d7824e7b790f0c026102dfc15c7",
+    "revision": "91d25e266a70996dea25e7c205ff8022",
     "url": "/VJCET/index.html"
   }
 ];
