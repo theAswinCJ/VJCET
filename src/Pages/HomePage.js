@@ -80,14 +80,3 @@ class HomePage extends Component {
 }
 
 export default HomePage;
-
-/*
-  <DepartmentSection />
-        <FacilitiesSection />
-        <VisionSection />
-        <CarouselOne/>
-        <CarouselTwo/>
-        <CarouselThree/>
-        <CarouselFour/>
-        <Footer />
-*/
