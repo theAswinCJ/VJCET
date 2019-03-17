@@ -52,7 +52,7 @@
   }
 
   #AboutBannerSectionBodyPara1 p {
-    text-align: left;
+    text-align: justify;
   }
 
   #AboutBannerSectionBodyPara2 {
@@ -61,7 +61,7 @@
   }
 
   #AboutBannerSectionBodyPara2 p {
-    text-align: left;
+    text-align: justify;
   }
 }
 
@@ -74,5 +74,29 @@
 @media (min-width: 1440px) {
   .AboutBannerSection {
     padding-top: 6%;
+  }
+
+  #AboutBannerSectionTitle h1 {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+
+  #AboutBannerSectionSubTitle {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+
+  #AboutBannerSectionBodyPara1 {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+
+  #AboutBannerSectionBodyPara2 {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+
+  #AboutBannerSectionSubTitle h4 {
+    padding-left: 0%;
   }
 }
