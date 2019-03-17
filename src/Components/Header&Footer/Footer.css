@@ -243,6 +243,7 @@
 
 @media (min-width: 1024px) {
   .Footer {
+    padding-left: 5%;
     grid-template-columns: 28% 17% 17% 16% 22%;
     grid-template-areas:
       "code one two three four"
@@ -275,6 +276,12 @@
       "follow follow follow follow"
       "fb insta twitter youtube";
     align-self: start;
-    padding-right: 30%;
+    padding-right: 5%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .FooterLinksFour {
+    padding-right: 15%;
   }
 }

@@ -1,0 +1,85 @@
+.ResourcesSection {
+  padding: 5% 2%;
+}
+
+#ResourcesSectionTitle {
+  grid-area: title;
+}
+
+#ResourceListOne {
+  grid-area: one;
+}
+
+#ResourceListTwo {
+  grid-area: two;
+}
+
+#ResourceListThree {
+  grid-area: three;
+}
+
+#ResourceListFour {
+  grid-area: four;
+}
+
+#ResourceListFive {
+  grid-area: five;
+}
+
+#ResourceListSix {
+  grid-area: six;
+}
+
+#ResourceVerticalLineOne {
+  display: none;
+  grid-area: line1;
+}
+
+#ResourceVerticalLineTwo {
+  display: none;
+  grid-area: line2;
+}
+
+@media (min-width: 500px) {
+  .ResourcesSection {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "title   title"
+      "one  two"
+      "three four"
+      "five  six";
+  }
+}
+
+@media (min-width: 768px) {
+  .ResourcesSection {
+    padding: 2% 4%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+      "title   title title"
+      "one  two  three"
+      "four  five  six";
+  }
+
+  #ResourcesSectionTitle {
+    padding: 2% 0%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ResourcesSection {
+    padding: 2% 12%;
+  }
+
+  #ResourcesSectionTitle {
+    padding: 1% 0%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #ResourcesSectionTitle {
+    padding: 0% 0%;
+  }
+}
