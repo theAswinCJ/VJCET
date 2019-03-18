@@ -1,17 +1,18 @@
 import React, { Component } from "react";
-import "./ButtonTwo.css";
-import Button from "../../Assets/ButtonTwo.png";
+import "./ButtonOne.css";
 
-class ButtonTwo extends Component {
+class ButtonOne extends Component {
   render() {
-    const { instanceID, width } = this.props.data;
+    const { instanceID, button, onclick } = this.props.data;
 
     return (
-      <div className="ButtonTwo" id={instanceID}>
-        <img src={Button} width={width} />
+      <div className="ButtonOne" id={instanceID}>
+        <a href={"../../Assets/" + button} download="file">
+          <img src={require("../../Assets/" + button)} width="200px" />
+        </a>
       </div>
     );
   }
 }
 
-export default ButtonTwo;
+export default ButtonOne;

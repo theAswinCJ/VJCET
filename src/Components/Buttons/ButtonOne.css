@@ -1,4 +1,14 @@
-.ButtonOne {
-  display: flex;
-  justify-content: flex-end;
+.ButtonOneContainer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 200px;
+  height: 48px;
+  background-color: #880d1e;
+  border-radius: 5px;
+}
+
+.ButtonOne a {
+  color: white;
+  text-decoration: none;
 }

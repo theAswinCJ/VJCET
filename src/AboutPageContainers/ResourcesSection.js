@@ -13,37 +13,49 @@ class ResourcesSection extends Component {
   ResourceListOne = {
     instanceID: "ResourceListOne",
     icon: "regulationsIcon.svg",
-    title: "AICTE Documents"
+    title: "AICTE Documents",
+    buttonText: "Download",
+    onclick: "../Assets/documentsIcon.svg"
   };
 
   ResourceListTwo = {
     instanceID: "ResourceListTwo",
     icon: "manualIcon.svg",
-    title: "Rules & Regulations"
+    title: "Rules & Regulations",
+    buttonText: "Download",
+    onclick: "https://www.google.com"
   };
 
   ResourceListThree = {
     instanceID: "ResourceListThree",
     icon: "documentsIcon.svg",
-    title: "Staff Manuals"
+    title: "Staff Manuals",
+    buttonText: "Download",
+    onclick: "https://www.google.com"
   };
 
   ResourceListFour = {
     instanceID: "ResourceListFour",
     icon: "financeIcon.svg",
-    title: "Academic Schema"
+    title: "Academic Schema",
+    buttonText: "Download",
+    onclick: "https://www.google.com"
   };
 
   ResourceListFive = {
     instanceID: "ResourceListFive",
     icon: "guidelinesIcon.svg",
-    title: "IQAC"
+    title: "IQAC",
+    buttonText: "View",
+    onclick: "https://www.google.com"
   };
 
   ResourceListSix = {
     instanceID: "ResourceListSix",
     icon: "studentsIcon.svg",
-    title: "Audited Financial Statements"
+    title: "Audited Financial Statements",
+    buttonText: "Download",
+    onclick: "https://www.google.com"
   };
 
   ResourceVerticalLineOne = {

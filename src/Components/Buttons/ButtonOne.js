@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import "./ButtonOne.css";
-import Button from "../../Assets/ButtonOne.svg";
 
 class ButtonOne extends Component {
   render() {
-    const { instanceID } = this.props.data;
+    const { instanceID, buttonText, onclick } = this.props.data;
 
     return (
       <div className="ButtonOne" id={instanceID}>
-        <img src={Button} width="200px" />
+        <div className="ButtonOneContainer">
+          <a href={onclick} download="">
+            {buttonText}
+          </a>
+        </div>
       </div>
     );
   }

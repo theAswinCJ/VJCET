@@ -17,7 +17,9 @@ class ResourceList extends Component {
   };
 
   ButtonOne = {
-    instanceID: this.props.data.instanceID + "Button"
+    instanceID: this.props.data.instanceID + "Button",
+    buttonText: this.props.data.buttonText,
+    onclick: this.props.data.onclick
   };
 
   render() {
